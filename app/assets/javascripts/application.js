@@ -17,7 +17,7 @@
 //= require_tree .
 /* global $ */
 
-$(document).ready(function(){
+$(document).on('tubrolinks:load', function(){
   $("#stock-lookup-form").on("ajax:complete", function(event, data, status){
     $("#results").html(data.responseText);
   })
